@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:adopt14
+    stdin_open: true
+    tty: true
+
+    ports:
+      - 25565:25565
+    volumes:
+      - "./server:/data"
+    environment:
+      TYPE: TUINITY
+      VERSION: LATEST
+
+      USE_AIKAR_FLAGS: "true"
+      MEMORY: 4G
+
+      EULA: "true"
+      ENABLE_RCON: "false"
+
+    restart: on-failure
+
+volumes:
+  minecraft:
