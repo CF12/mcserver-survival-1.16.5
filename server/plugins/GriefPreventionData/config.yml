@@ -1,9 +1,9 @@
 # Default values are perfect for most servers.  If you want to customize and have a question, look for the answer here first: http://dev.bukkit.org/bukkit-plugins/grief-prevention/pages/setup-and-configuration/
 GriefPrevention:
   SeaLevelOverrides:
-    world: -1
-    world_nether: -1
-    world_the_end: -1
+    world: 255
+    world_nether: 255
+    world_the_end: 255
   Claims:
     Mode:
       world_the_end: Survival
@@ -21,29 +21,29 @@ GriefPrevention:
     ProtectHorses: true
     ProtectDonkeys: true
     ProtectLlamas: true
-    InitialBlocks: 1000
+    InitialBlocks: 5000
     Claim Blocks Accrued Per Hour:
-      Default: 100
+      Default: 1000
     Max Accrued Claim Blocks:
-      Default: 10000
+      Default: 1000000
     Accrued Idle Threshold: 0
     AccruedIdlePercent: 0
     AbandonReturnRatio: 1.0
     AutomaticNewPlayerClaimsRadius: 4
     AutomaticNewPlayerClaimsRadiusMinimum: 0
-    ExtendIntoGroundDistance: 5
+    ExtendIntoGroundDistance: 255
     MinimumWidth: 5
-    MinimumArea: 100
+    MinimumArea: 25
     MaximumDepth: 0
     InvestigationTool: STICK
     ModificationTool: GOLDEN_SHOVEL
     Expiration:
-      ChestClaimDays: 0
-      UnusedClaimDays: 0
+      ChestClaimDays: -1
+      UnusedClaimDays: -1
       AllClaims:
-        DaysInactive: 60
-        ExceptWhenOwnerHasTotalClaimBlocks: 10000
-        ExceptWhenOwnerHasBonusClaimBlocks: 5000
+        DaysInactive: -1
+        ExceptWhenOwnerHasTotalClaimBlocks: -1
+        ExceptWhenOwnerHasBonusClaimBlocks: -1
       AutomaticNatureRestoration:
         SurvivalWorlds: false
     AllowTrappedInAdminClaims: false
@@ -58,7 +58,7 @@ GriefPrevention:
     FireDamagesInClaims: false
     LecternReadingRequiresAccessTrust: true
   Spam:
-    Enabled: true
+    Enabled: false
     LoginCooldownSeconds: 60
     LoginLogoutNotificationsPerMinute: 5
     ChatSlashCommands: /me;/global;/local
@@ -100,7 +100,7 @@ GriefPrevention:
   BlockLandClaimExplosions: true
   BlockSurfaceCreeperExplosions: true
   BlockSurfaceOtherExplosions: true
-  LimitSkyTrees: true
+  LimitSkyTrees: false
   LimitTreeGrowth: false
   PistonMovement: CLAIMS_ONLY
   PistonExplosionSound: true
@@ -149,11 +149,11 @@ GriefPrevention:
     - GLASS_PANE
     DoorsOpenDelayInSeconds: 300
     CooldownEndInMinutes: 60
-  EndermenMoveBlocks: false
-  SilverfishBreakBlocks: false
-  CreaturesTrampleCrops: false
+  EndermenMoveBlocks: true
+  SilverfishBreakBlocks: true
+  CreaturesTrampleCrops: true
   RabbitsEatCrops: true
-  HardModeZombiesBreakDoors: false
+  HardModeZombiesBreakDoors: true
   Database:
     URL: ''
     UserName: ''
