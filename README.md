@@ -1,7 +1,7 @@
 # mc.cf12.org
 
 Features:
-- Tuinity 1.16.4
+- Tuinity latest
 - Vanilla spawn rates and features
   - Bedrock breaking ENABLED
 - Proxy connections refused
