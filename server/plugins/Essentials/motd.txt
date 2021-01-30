@@ -1,0 +1,11 @@
+
+&6&l&m--------[&e&l MC.CF12.ORG &6&l&m]--------
+&3Welcome, &b{PLAYER}&3! You're connected from &b{IP}
+&3Players online:&b {ONLINE} &3- World time:&b {WORLDTIME12}
+
+&3Type &b/help&3 for a list of commands
+&3Type &b/list&3 to see who else is online
+
+&3Online server dynmap: &bhttps://mc.cf12.org:8123
+&6&l&m-----------------------------
+
