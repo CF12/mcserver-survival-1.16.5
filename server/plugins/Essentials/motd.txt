@@ -5,7 +5,5 @@
 
 &3Type &b/help&3 for a list of commands
 &3Type &b/list&3 to see who else is online
-
-&3Online server dynmap: &bhttps://mc.cf12.org:8123
 &6&l&m-----------------------------
 
