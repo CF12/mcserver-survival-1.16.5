@@ -6,9 +6,9 @@ GriefPrevention:
     world_the_end: 255
   Claims:
     Mode:
-      world_the_end: Survival
-      world: Survival
       world_nether: Survival
+      world: Survival
+      world_the_end: Survival
     PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
@@ -104,8 +104,8 @@ GriefPrevention:
   LimitTreeGrowth: false
   PistonMovement: CLAIMS_ONLY
   PistonExplosionSound: true
-  FireSpreads: false
-  FireDestroys: false
+  FireSpreads: true
+  FireDestroys: true
   AdminsGetWhispers: true
   AdminsGetSignNotifications: true
   SmartBan: true
