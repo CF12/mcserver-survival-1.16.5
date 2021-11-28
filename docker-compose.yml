@@ -2,7 +2,7 @@ version: "3"
 
 services:
   minecraft:
-    image: itzg/minecraft-server:adopt14
+    image: itzg/minecraft-server:java17
     stdin_open: true
     tty: true
 
@@ -11,15 +11,18 @@ services:
       - 8123:8123
     volumes:
       - "./server:/data"
+      # - "./plugins:/plugins"
     environment:
-      TYPE: TUINITY
-      VERSION: LATEST
+      TYPE: SPIGOT
+      VERSION: 1.18-rc3
 
       USE_AIKAR_FLAGS: "true"
       MEMORY: 4G
 
       EULA: "true"
       ENABLE_RCON: "false"
+
+      SPIGET_RESOURCES: 9089 # EssentialsX
 
     restart: on-failure
 
