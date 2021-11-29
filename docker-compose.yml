@@ -11,19 +11,37 @@ services:
       - 8123:8123
     volumes:
       - "./server:/data"
-      # - "./plugins:/plugins"
+      - "./plugins:/plugins"
+      - "./config:/config"
     environment:
       TYPE: SPIGOT
       VERSION: 1.18-rc3
+      BUILD_FROM_SOURCE: "true"
+
+      # Config files will always be copied directly to server root
+      COPY_CONFIG_DEST: /data
+      SYNC_SKIP_NEWER_IN_DESTINATION: "false"
 
       USE_AIKAR_FLAGS: "true"
-      MEMORY: 4G
+      MEMORY: 6G
 
       EULA: "true"
       ENABLE_RCON: "false"
 
-      SPIGET_RESOURCES: 9089 # EssentialsX
-
+      # why tf is this not an array
+      # 9089 - EssentialsX
+      # 68965 - LuckPermsChat
+      # 28140 - LuckPerms
+      # 8631 - CoreProtect
+      # 1884 - GriefPrevention
+      # 60088 - Harbor
+      # 74429 - Fast Chunk Pregenerator
+      # 1997 - ProtocolLib
+      # 1331 - SuperVanish
+      # 88135 - PlugManX
+      # 26585 - ImageOnMap
+      # 8390 - MOTD
+      SPIGET_RESOURCES: 9089,68965,28140,8631,1884,60088,74429,1997,1331,88135,26585,8390
     restart: on-failure
 
 volumes:
