@@ -15,7 +15,7 @@ services:
       - "./config:/config"
     environment:
       TYPE: SPIGOT
-      VERSION: 1.18-rc3
+      VERSION: 1.18.1
       BUILD_FROM_SOURCE: "true"
 
       # Config files will always be copied directly to server root
@@ -29,11 +29,9 @@ services:
       ENABLE_RCON: "false"
 
       # why tf is this not an array
-      # 9089 - EssentialsX
       # 68965 - LuckPermsChat
       # 28140 - LuckPerms
       # 8631 - CoreProtect
-      # 1884 - GriefPrevention
       # 60088 - Harbor
       # 74429 - Fast Chunk Pregenerator
       # 1997 - ProtocolLib
@@ -41,7 +39,8 @@ services:
       # 88135 - PlugManX
       # 26585 - ImageOnMap
       # 8390 - MOTD
-      SPIGET_RESOURCES: 9089,68965,28140,8631,1884,60088,74429,1997,1331,88135,26585,8390
+      # 48853 - ServerRestorer
+      SPIGET_RESOURCES: 68965,28140,8631,60088,74429,1997,1331,88135,26585,8390,48853
     restart: on-failure
 
 volumes:
