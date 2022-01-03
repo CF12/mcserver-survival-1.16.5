@@ -102,7 +102,7 @@ GriefPrevention:
   BlockSurfaceOtherExplosions: true
   LimitSkyTrees: false
   LimitTreeGrowth: false
-  PistonMovement: CLAIMS_ONLY
+  PistonMovement: EVERYWHERE
   PistonExplosionSound: true
   FireSpreads: true
   FireDestroys: true

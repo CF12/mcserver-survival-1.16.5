@@ -14,7 +14,7 @@ services:
       - "./plugins:/plugins"
       - "./config:/config"
     environment:
-      TYPE: SPIGOT
+      TYPE: PAPER
       VERSION: 1.18.1
       BUILD_FROM_SOURCE: "true"
 
@@ -23,7 +23,7 @@ services:
       SYNC_SKIP_NEWER_IN_DESTINATION: "false"
 
       USE_AIKAR_FLAGS: "true"
-      MEMORY: 6G
+      MEMORY: 14G
 
       EULA: "true"
       ENABLE_RCON: "false"
